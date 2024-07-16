@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #00b09b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #96c93d,
+    #00b09b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #96c93d,
+    #00b09b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-size: clamp(1rem, 0.6rem + 2vw, 1.7rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: min(90%, 60rem);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header__title {
+  font-size: clamp(2rem, 0.8rem + 3vw, 3rem);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip-text {
+  opacity: 0;
+  position: absolute;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.form__label {
+}
+
+.form__input {
+  font: inherit;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #00b09b;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+}
+
+.form__btn {
+  font: inherit;
+  padding: 0.5em 1em;
+  border: 2px solid #00b09b;
+  background-color: #fff;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  cursor: pointer;
+}

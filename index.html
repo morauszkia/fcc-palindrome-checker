@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Palindrome Checker</title>
+        <link rel="stylesheet" href="./styles.css">
     </head>
 
     <body>
@@ -12,16 +13,16 @@
             <header class="header">
                 <h1 class="header__title">Palindrome Checker</h1>
                 <p class="header__instructions">Enter your text below, and hit "Check" to see, if it's a
-                    <span class="instructions__tooltip">
+                    <span class="tooltip">
                         palindrome
-                        <span class="instructions__tooltip-text">a word, phrase, or
+                        <span class="tooltip-text">a word, phrase, or
                             sequence that reads the same backwards as forwards</span>
                     </span>
                 </p>
             </header>
             <form class="form">
-                <label class="form__label" for="text-input">Enter your word or phrase:</label>
-                <input class="form__input" type="text" id="text-input" placeholder="...">
+                <label class="form__label" for="text-input">Enter your word or phrase</label>
+                <input class="form__input" type="text" id="text-input">
                 <button class="form__btn" id="check-btn">Check</button>
             </form>
             <section class="result">
