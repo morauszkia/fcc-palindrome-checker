@@ -59,9 +59,35 @@ body {
   cursor: help;
 }
 
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+}
+
 .tooltip-text {
   opacity: 0;
   position: absolute;
+  width: min(45rem, 70vw);
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 100px;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -1rem);
+  z-index: 100;
+  transition: all 0.2s ease-in;
+}
+
+.tooltip-text::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: -90;
 }
 
 .form {
