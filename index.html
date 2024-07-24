@@ -13,7 +13,8 @@
         <main class="container">
             <header class="header">
                 <h1 class="header__title">Palindrome Checker</h1>
-                <p class="header__instructions">Enter your text below, and hit "Check" to see, if it's a
+                <p class="header__instructions">Enter your text below, and hit <span class="highlight">"Check"</span> to
+                    see, if it's a
                     <span class="tooltip">
                         palindrome
                         <span class="tooltip-text">a word, phrase, or
@@ -23,8 +24,10 @@
             </header>
             <form class="form">
                 <label class="form__label" for="text-input">Enter your word or phrase</label>
-                <input class="form__input" type="text" id="text-input">
-                <button class="form__btn" id="check-btn">Check</button>
+                <div class="form-control">
+                    <input class="form__input" type="text" id="text-input">
+                    <button class="form__btn" id="check-btn">Check</button>
+                </div>
             </form>
             <section class="result">
                 <p class="result__text" id="result"></p>
