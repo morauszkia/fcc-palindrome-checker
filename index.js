@@ -17,13 +17,18 @@ const handleInput = (e) => {
 
   const input = textInputEl.value;
 
+  resultTextEl.innerHTML = "";
+
   if (input.trim().length === 0) {
     resultTextEl.textContent = "Please input a value";
   } else if (isPalindrome(input)) {
-    resultTextEl.textContent = `${input} is a palindrome`;
+    resultTextEl.innerHTML = `<span class="highlight">${input}</span> is a palindrome`;
   } else {
-    resultTextEl.textContent = `${input} is not a palindrome`;
+    resultTextEl.innerHTML = `<span class="highlight">${input}</span> is not a palindrome`;
   }
+
+  textInputEl.value = "";
+  checkBtnEl.blur();
 };
 
 checkBtnEl.addEventListener("click", handleInput);
