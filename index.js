@@ -1,6 +1,6 @@
-textInputEl = document.getElementById("text-input");
-checkBtnEl = document.getElementById("check-btn");
-resultTextEl = document.getElementById("result");
+const textInputEl = document.getElementById("text-input");
+const checkBtnEl = document.getElementById("check-btn");
+const resultTextEl = document.getElementById("result");
 
 const reverseString = (original) => original.split("").reverse().join("");
 
